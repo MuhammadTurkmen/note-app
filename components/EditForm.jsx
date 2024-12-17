@@ -6,6 +6,7 @@ import Link from "next/link";
 import React, { useRef, useState } from "react";
 
 const EditForm = ({ note }) => {
+  // states
   const [newTitle, setNewTitle] = useState(note.title);
   const [newContent, setNewContent] = useState(note.content);
   const [newImageSrc, setNewIMageSrc] = useState(note.img);
