@@ -64,6 +64,7 @@ export const archiveNote = async (id) => {
       isArchived: true,
     },
   });
+  // revalidateting path
   revalidatePath("/archive");
   revalidatePath("/");
 };
