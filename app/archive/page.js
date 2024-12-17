@@ -2,6 +2,8 @@ import ArchivedNotes from "@/components/ArchivedNotes";
 import prisma from "@/utils/db";
 import { BiArchiveIn } from "react-icons/bi";
 
+export const dynamic = "force-dynamic";
+
 const ArchivePage = async () => {
   const notes = await prisma.notes.findMany();
 
