@@ -30,6 +30,7 @@ export const deleteNote = async (id) => {
 
   revalidatePath("/");
   revalidatePath("/archive");
+  revalidatePath("/delete");
 };
 
 export const undoNote = async (id) => {

@@ -2,7 +2,6 @@ import DeletedNotes from "@/components/DeletedNotes";
 import prisma from "@/utils/db";
 import React from "react";
 import { FaRegTrashAlt } from "react-icons/fa";
-export const dynamic = "force-dynamic";
 
 const DeletePage = async () => {
   const notes = await prisma.notes.findMany();
