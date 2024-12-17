@@ -6,6 +6,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 const DeletePage = async () => {
   const notes = await prisma.notes.findMany();
 
+  // checking
   if (notes.length === 0 || notes.every((note) => !note.isDeleted)) {
     return (
       <div className="flex flex-col items-center  mt-36">
