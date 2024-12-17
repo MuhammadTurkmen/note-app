@@ -6,13 +6,13 @@ import Logo from "/public/Logo.png";
 import { CiSearch } from "react-icons/ci";
 
 const MobileNavbar = () => {
-  const handleSearch = (e) => {
-    if (e.target.value) {
-      next.router.push(`/?search=${encodeURIComponent(e.target.value)}`);
-    } else {
-      next.router.push("/");
-    }
-  };
+  // const handleSearch = (e) => {
+  //   if (e.target.value) {
+  //     next.router.push(`/?search=${encodeURIComponent(e.target.value)}`);
+  //   } else {
+  //     next.router.push("/");
+  //   }
+  // };
 
   return (
     <div className="md:hidden">
@@ -35,7 +35,7 @@ const MobileNavbar = () => {
               name=""
               id=""
               placeholder="Search..."
-              onChange={(e) => handleSearch(e)}
+              // onChange={(e) => handleSearch(e)}
             />
           </form>
         </div>

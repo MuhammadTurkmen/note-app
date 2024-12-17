@@ -12,18 +12,18 @@ import { searchNote } from "@/utils/actions";
 const Sidebar = () => {
   const pathname = usePathname();
   const [search, setSearch] = useState("");
-  const [notes, setNotes] = useState([]);
-  const handleSearchNote = searchNote.bind(null, search);
+  // const [notes, setNotes] = useState([]);
+  // const handleSearchNote = searchNote.bind(null, search);
 
-  const handleSubmit = (e) => {
-    setSearch(e.target.value);
+  // const handleSubmit = (e) => {
+  //   setSearch(e.target.value);
 
-    if (e.target.value) {
-      next.router.push(`/?search=${encodeURIComponent(e.target.value)}`);
-    } else {
-      next.router.push("/");
-    }
-  };
+  //   if (e.target.value) {
+  //     next.router.push(`/?search=${encodeURIComponent(e.target.value)}`);
+  //   } else {
+  //     next.router.push("/");
+  //   }
+  // };
 
   return (
     <div className="w-[200px] h-screen fixed shadow-lg shadow-slate-200 hidden md:block lg:w-[250px] md:px-5 py-7">
@@ -47,9 +47,9 @@ const Sidebar = () => {
           name=""
           id=""
           value={search}
-          onChange={(e) => {
-            handleSubmit(e);
-          }}
+          // onChange={(e) => {
+          //   handleSubmit(e);
+          // }}
           placeholder="Search..."
         />
       </form>
