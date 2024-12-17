@@ -1,6 +1,6 @@
 import AllNotes from "@/components/AllNotes";
 import { searchNote } from "@/utils/actions";
-// export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic";
 
 export default async function Home() {
   // { searchParams: searchparamsPromis }
